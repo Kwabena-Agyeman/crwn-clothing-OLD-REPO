@@ -12,7 +12,7 @@ const CartIcon = (props) => {
   return (
     <div className='cart-icon' onClick={toggleCartDisplay}>
       <ShoppingIcon className='shopping-icon' />
-      <span className='item-count'></span>
+      <span className='item-count'>0</span>
     </div>
   );
 };
