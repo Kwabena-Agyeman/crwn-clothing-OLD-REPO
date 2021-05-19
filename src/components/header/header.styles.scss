@@ -5,10 +5,24 @@
   justify-content: space-between;
   margin-bottom: 25px;
 
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .logo-container {
     height: 100%;
-    width: 70px;
+    width: 100px;
     padding: 25px;
+
+    .logo {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 900px) {
+      text-align: center;
+    }
   }
 
   .options {
@@ -17,6 +31,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media screen and (max-width: 900px) {
+      width: fit-content;
+      justify-content: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
 
     .option {
       padding: 10px 15px;
